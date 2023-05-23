@@ -1,11 +1,17 @@
 // Challenge 1: Merge Objects
 function mergeObjects(obj1, obj2) {
   // Write your code here
+  return { ...obj1, ...obj2 };
 }
 
 // Challenge 2: Calculate Average Age
 function calculateAverageAge(persons) {
   // Write your code here
+  let totalAge = 0;
+  persons.forEach((person) => {
+    totalAge += person.age;
+  });
+  return totalAge / persons.length;
 }
 
 // Challenge 3: Filter Students by Grade
